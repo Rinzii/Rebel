@@ -102,7 +102,7 @@ file(GLOB_RECURSE HPP_FILES ${CMAKE_CURRENT_SOURCE_DIR}/include/*.*)
 
 
 option(REBEL_BUILD_SHADERS "Build rebel shaders" ${is_root_project})
-option(REBEL_PCH "Use PCH" OFF)
+option(REBEL_PCH "Use PCH" OFF) # TODO: PCH is not working yet
 option(REBEL_BUILD_EXE "Build rebel application (else only library)" ${is_root_project})
 
 if(REBEL_BUILD_EXE AND REBEL_BUILD_SHADERS)

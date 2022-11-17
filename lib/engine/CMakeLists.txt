@@ -26,7 +26,7 @@ target_link_libraries(${PROJECT_NAME}
   glfw::glfw
 
   PRIVATE
-  #${target_prefix}::compile-options
+  ${target_prefix}::compile-options
 )
 
 string(TOUPPER ${target_prefix} target_prefix_upper)

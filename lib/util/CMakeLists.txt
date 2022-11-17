@@ -16,7 +16,7 @@ target_include_directories(${PROJECT_NAME}
         include
 
         PRIVATE
-        #src
+        src
         )
 
 target_link_libraries(${PROJECT_NAME}
@@ -63,8 +63,9 @@ target_compile_definitions(${PROJECT_NAME}
         )
 
 target_sources(${PROJECT_NAME} PRIVATE
-        include/${target_prefix}/util/mufo.hpp
-        include/${target_prefix}/util/error.hpp
-        include/${target_prefix}/util/version.hpp
+  include/${target_prefix}/util/mufo.hpp
+  include/${target_prefix}/util/error.hpp
+  include/${target_prefix}/util/version.hpp
 
-        )
+    src/version.cpp
+)
